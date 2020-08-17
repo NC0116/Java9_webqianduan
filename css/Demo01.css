@@ -1,0 +1,25 @@
+/*div{*/
+/*    width: 200px;*/
+/*    height: 300px;*/
+/*    border: red 3px solid;*/
+/*}*/
+.A{
+    color: blue;
+   font-size:100px ;
+}
+.B {
+    color: red;
+    font-size: 80px;
+}
+.C{
+    color:yellow;
+    font-size: 80px;
+}
+.D{
+    color:blue;
+    font-size: 80px;
+}
+.E{
+    color:green;
+    font-size: 80px;
+}
