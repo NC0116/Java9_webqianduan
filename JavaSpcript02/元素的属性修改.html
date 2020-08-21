@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <button id="kzs">开牌大师</button>
+    <button id="kpds">张国荣</button>
+</div>
+<img src="img/2.jpg" alt="" height="200px" width="200px" title="张国荣">
+ <script>
+     // 获取元素
+     var kzs = document.getElementById('kzs');
+     var kpds = document.getElementById('kpds');
+     var imgh = document.querySelector('img');
+     // 注册事件
+     kzs.onclick = function (){
+
+         imgh.src='img/kpda.png';
+         imgh.title='狂战士';
+
+     }
+    kpds.onclick = function (){
+            imgh.src='img/2.jpg';
+            imgh.title='张国荣';
+     }
+ </script>
+
+</body>
+</html>

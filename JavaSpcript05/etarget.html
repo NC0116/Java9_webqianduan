@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<script>
+//     常情况下terget 和 this是一致的，
+// 但有一种情况不同，那就是在事件冒泡时（父子元素有相同事件，单击子元素，父元素的事件处理函数也会被触发执行），
+//     这时候this指向的是父元素，因为它是绑定事件的元素对象，
+//     而target指向的是子元素，因为他是触发事件的那个具体元素
+
+var div = document.querySelector('div')
+
+div.addEventListener('click', function (e) {
+    // 没区别
+    console.log(e.target);
+    console.log('+++++++++++++++');
+    console.log(this)
+})
+var ul = document.querySelector('ul')
+ul.addEventListener('click', function (e) {
+    // 绑定ul 指定的是ul
+    console.log(this)
+    console.log('+++++++++++++++');
+    console.log(e.currentTarget)
+    console.log('+++++++++++++++');
+    // 谁触发了那个事件，  e.target就指向谁
+    console.log(e.target);
+
+})
+
+</script>
+
+</body>
+</html>

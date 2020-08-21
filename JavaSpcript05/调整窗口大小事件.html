@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+<div>点击我</div>
+<script>
+    var div = document.querySelector('div')
+    window.addEventListener('resize',function (){
+        console.log(window.innerWidth)
+        if (window.innerWidth <600 ){
+            div.style.display='none'
+        }else {
+            div.style.display='block'
+        }
+    })
+
+</script>
+</body>

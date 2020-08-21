@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 1190px;
+            height: 80px;
+            background-image: url("jdad/luzhou.jpg");
+        }
+        img{
+            float:right ;
+        }
+
+
+    </style>
+</head>
+<body>
+<div>
+  <img src="jdad/close.jpg">
+</div>
+
+
+<script>
+   var img=document.querySelector('img')
+   var div=document.querySelector('div')
+   img.onclick = function () {
+        img.src = '';
+        div.style.backgroundImage='none';
+   }
+</script>
+</body>
+</html>
+.

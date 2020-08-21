@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button{
+            background-color:white ;
+            color: orange;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <button >开关</button>
+    <script>
+    var button = document.querySelector('button')
+    var div=document.querySelector('body')
+    var fage=0;
+    button.onclick = function (){
+        if (fage == 0){
+            div.style.backgroundColor='black';
+            button.style.backgroundColor='white';
+            fage=1
+        }else{
+            div.style.backgroundColor='white';
+            button.style.backgroundColor='black';
+            fage=0
+        }
+    }
+</script>
+</body>
+</html>
