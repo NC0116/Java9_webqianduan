@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 10;
+    console.log(a)
+
+    if (true){
+        let b = 10;
+        console.log(b)
+    }
+    console.log(b)
+
+
+
+    if (true){
+        var b = 10;
+        console.log(b)
+    }
+    console.log(b)
+    //在一个大括号中使用let 声明的变量才具有块级作用域
+    //var 不具备这个特点
+    //为了防止循环变量成为全局变量可以使用let声明变量
+    for (let i = 0; i < 2; i++) {
+        console.log(i)
+    }
+
+</script>
+</body>
+</html>
